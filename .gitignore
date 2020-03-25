@@ -1,4 +1,9 @@
 node_modules/
 dist/
-.idea/
 package-lock.json
+
+# Disabling yarn for repository
+.yarn/
+.yarnrc.yml
+.pnp.js
+yarn.lock
