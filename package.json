@@ -1,6 +1,6 @@
 {
   "name": "@kenift/rollup-typescript-boilerplate",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Kenift typescript boilerplate",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -62,15 +62,25 @@
           }
         }
       ],
-      ["@semantic-release/release-notes-generator", {
-        "preset": "angular",
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
-        },
-        "writerOpts": {
-          "commitsSort": ["subject", "scope"]
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "angular",
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING CHANGE",
+              "BREAKING CHANGES",
+              "BREAKING"
+            ]
+          },
+          "writerOpts": {
+            "commitsSort": [
+              "subject",
+              "scope"
+            ]
+          }
         }
-      }],
+      ],
       "@semantic-release/github",
       "@semantic-release/changelog",
       "@semantic-release/exec",
