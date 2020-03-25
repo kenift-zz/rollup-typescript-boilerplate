@@ -1,6 +1,6 @@
 {
   "name": "@kenift/localizer",
-  "version": "0.0.1",
+  "version": "1.0.7",
   "description": "Kenift tool to provide internalization and localization for own projects",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -32,14 +32,38 @@
         {
           "preset": "angular",
           "releaseRules": [
-            {"type": "build", "release": "patch"},
-            {"type": "fix", "release": "patch"},
-            {"type": "feat","release": "minor"},
-            {"type": "break","release": "major"},
-            {"type": "test","release": "patch"},
-            {"type": "docs","release": "patch"},
-            {"type": "refactor","release": "patch"},
-            {"type": "style","release": "patch"}
+            {
+              "type": "build",
+              "release": "patch"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "break",
+              "release": "major"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "type": "style",
+              "release": "patch"
+            }
           ],
           "parserOpts": {
             "noteKeywords": [
@@ -54,10 +78,16 @@
       "@semantic-release/changelog",
       "@semantic-release/exec",
       "@semantic-release/npm",
-      ["@semantic-release/git", {
-        "assets": ["package.json", "CHANGELOG.md"],
-        "message": "chore(release): <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]\\n\\n<%= nextRelease.notes %>"
-      }]
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]\\n\\n<%= nextRelease.notes %>"
+        }
+      ]
     ]
   },
   "publishConfig": {
