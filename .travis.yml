@@ -11,4 +11,3 @@ jobs:
         - npm run test
       after_success:
         - npm run release
-        - chmod +x ./scripts/git-commit.bash
