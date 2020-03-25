@@ -11,7 +11,19 @@
   },
   "release": {
     "branches": [
-      "master"
+      "master",
+      {
+        "name": "v1.x.x",
+        "prerelease": false
+      },
+      {
+        "name": "v2.x.x",
+        "prerelease": false
+      },
+      {
+        "name": "v3.x.x",
+        "prerelease": false
+      }
     ],
     "repositoryUrl": "https://github.com/kenift/localizer.git",
     "plugins": [
