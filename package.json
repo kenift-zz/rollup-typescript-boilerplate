@@ -26,6 +26,14 @@
               "release": "patch"
             },
             {
+              "type": "ci",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
               "type": "fix",
               "release": "patch"
             },
@@ -34,15 +42,11 @@
               "release": "minor"
             },
             {
-              "type": "break",
-              "release": "major"
-            },
-            {
               "type": "test",
               "release": "patch"
             },
             {
-              "type": "docs",
+              "type": "perf",
               "release": "patch"
             },
             {
@@ -51,6 +55,10 @@
             },
             {
               "type": "style",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
               "release": "patch"
             }
           ],
@@ -92,7 +100,7 @@
             "package.json",
             "CHANGELOG.md"
           ],
-          "message": "chore(release): <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]"
+          "message": "chore(release): <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip-ci]"
         }
       ]
     ]
