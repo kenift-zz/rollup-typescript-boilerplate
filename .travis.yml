@@ -1,21 +1,9 @@
 language: node_js
 node_js:
-  - 8
-  - 6
-
-env:
-  - GH_TOKEN=$GH_TOKEN
+  - 12
 
 jobs:
   include:
-    - stage: build
-      before_script:
-        - npm install
-      script:
-        - npm run build
-
-      after_success: true
-
     - stage: test
       before_script:
         - npm install && npm run build
