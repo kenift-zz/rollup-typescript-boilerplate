@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 8
+  - 6
+
+env:
+  - GH_TOKEN=$GH_TOKEN
+
+jobs:
+  include:
+    - stage: test
+      before_script:
+        npm run install
+      script:
+        - npm run build
+      after_script:
+        - npm run test
+      after_success:
+        - npm run release
