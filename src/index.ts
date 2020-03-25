@@ -1,8 +1,10 @@
 class Localizer {
   private kek: string;
   private ponki: string;
+  private lel: string;
   constructor(string: string) {
     this.kek = string;
+    this.lel = "OGGG LOG";
 
     this.ponki = this.kek + " WTF !?"
   }
@@ -16,6 +18,9 @@ class Localizer {
   }
   getPonki(): string {
     return this.ponki;
+  }
+  getLel(): string {
+    return this.lel;
   }
 }
 
