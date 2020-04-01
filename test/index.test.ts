@@ -1,4 +1,4 @@
-let { Localizer } = require('../dist/index.js');
+import { Localizer } from '../src'
 
 const localizer = new Localizer("dasdasdasd");
 
