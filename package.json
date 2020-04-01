@@ -1,6 +1,6 @@
 {
   "name": "@kenift/rollup-typescript-boilerplate",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Kenift typescript boilerplate",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
